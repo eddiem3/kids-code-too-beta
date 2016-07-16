@@ -4,21 +4,18 @@
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
+  <!-- Behavioral Meta Data -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="img/small-logo-01.png">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <title>Traktion.io</title>
   <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -26,7 +23,6 @@
 
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -34,10 +30,33 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="addPost/addPost.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.0.3/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+  
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDksJHarsetWmGivMTiRSjl-QTs1wRmbEQ",
+    authDomain: "project-2176317964222401908.firebaseapp.com",
+    databaseURL: "https://project-2176317964222401908.firebaseio.com",
+    storageBucket: "project-2176317964222401908.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+
 </body>
 </html>
