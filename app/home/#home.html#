@@ -99,7 +99,7 @@
       <section class="work">
 	
 	<figure class="white" ng-repeat="post in posts">
-	  <a href="{{post.link}}">	    
+	  <a href="details.html">	    
 	    <img ng-src="{{post.image}}" alt="" />
 	    <dl>
 	      <dt>{{post.title}}</dt>
@@ -113,7 +113,7 @@
         </figure>
       </section>    
     </div>
-    </a>
+  </div>
 
   
   <div id="wrapper-oldnew">

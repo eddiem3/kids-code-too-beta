@@ -1,5 +1,41 @@
-<form>
-  <input ng-model="user.email" type="email" placeholder="site@example.com">
-  <input ng-model="user.password" type="password" placeholder="password">
-  <input ng-click="SignIn($event)" type="submit" value="Login"></li>
-</form>
+<div class="container" ng-controller="AddPostCtrl">
+  
+  <form class="form-horizontal" ng-submit="AddPost()">
+    <fieldset>
+      
+      <!-- Form Name -->
+      <legend>Create Post</legend>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="txtTitle">Title</label>
+        <div class="col-md-4">
+          <input ng-model="post.title" id="txtTitle" name="txtTitle" type="text" placeholder="placeholder" class="form-control input-md">
+	  
+        </div>
+      </div>
+
+      <input ng-model="post.summary" id="txtTitle" name="txtTitle" type="text" placeholder="placeholder" class="form-control input-md">
+      
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="txtPost">Post</label>
+        <div class="col-md-4">
+          <textarea ng-model="post.content" class="form-control" id="txtPost" name="txtPost"></textarea>
+        </div>
+      </div>
+      
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="singlebutton"></label>
+        <div class="col-md-4">
+          <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Publish" />
+        </div>
+      </div>
+      
+    </fieldset>
+  </form>
+  
+  
+</div>
+<!-- /.container -->

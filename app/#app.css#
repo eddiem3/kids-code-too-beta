@@ -293,14 +293,14 @@ body,html{
 /* MAIN DIV WITH IMAGE */
 /*----------------------------*/
 
-#main-container-image {
-    float:left;
-    width:100%;
-    height:auto;
-    background-color:#F4F4F4;
-    margin-top:25px;
-   /* opacity:0;*/
-}
+/* #main-container-image { */
+/*     float:left; */
+/*     width:100%; */
+/*     height:auto; */
+/*     background-color:#F4F4F4; */
+/*     margin-top:25px; */
+/*     opacity:0;  */
+/* } */
 
 .Work figure {
     float:left;
