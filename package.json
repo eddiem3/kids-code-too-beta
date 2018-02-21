@@ -18,10 +18,12 @@
 	"shelljs": "^0.6.0"
     },
 
-
     "engines": {
-	"node": "4.2.6"
+	"node": "5.0.0",
+	"npm": "4.6.1"
     },
+
+    
     "scripts": {
 	"postinstall": "bower install",
 	"prestart": "npm install",
